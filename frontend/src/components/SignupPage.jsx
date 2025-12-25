@@ -1,5 +1,6 @@
 import React from 'react';
 import { ShieldCheck, Mail, User, EyeOff, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Input from './ui/Input';
 import Button from './ui/Button';
 import SignupHero from './SignupHero';
@@ -15,7 +16,7 @@ const SignupPage = () => {
                         <div className="w-8 h-8 bg-brand-blue rounded-lg transform rotate-3 flex items-center justify-center">
                             <div className="w-4 h-4 bg-white/20 rounded-sm"></div>
                         </div>
-                        <span className="text-xl font-bold tracking-tight">Skillyards CRM</span>
+                        <span className="text-xl font-bold tracking-tight text-white">Skillyards CRM</span>
                     </div>
 
                     {/* Header */}
@@ -45,19 +46,19 @@ const SignupPage = () => {
                         <Input
                             label="Full Name"
                             placeholder="e.g. John Doe"
-                            icon={User}
+                            leftIcon={User}
                         />
                         <Input
                             label="Work Email"
                             placeholder="name@company.com"
                             type="email"
-                            icon={Mail}
+                            leftIcon={Mail}
                         />
                         <Input
                             label="Password"
                             placeholder="At least 8 characters"
                             type="password"
-                            icon={EyeOff}
+                            leftIcon={EyeOff}
                         />
                         <Input
                             label="Confirm Password"
@@ -80,7 +81,7 @@ const SignupPage = () => {
 
                     {/* Footer */}
                     <div className="text-center text-sm text-gray-400">
-                        Already have an account? <a href="#" className="text-brand-blue font-medium hover:underline">Log In</a>
+                        Already have an account? <Link to="/login" className="text-brand-blue font-medium hover:underline">Log In</Link>
                     </div>
 
                     <div className="pt-8 border-t border-gray-800/50 flex justify-center items-center gap-2 text-xs text-gray-500 tracking-wider font-semibold">

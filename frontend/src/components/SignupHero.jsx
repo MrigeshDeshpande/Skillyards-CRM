@@ -6,23 +6,6 @@ const SignupHero = () => {
         <div className="hidden lg:flex lg:w-1/2 bg-[#020617] relative flex-col justify-center items-center p-12 text-center overflow-hidden">
             {/* Abstract Waves Background */}
             <div className="absolute inset-0 overflow-hidden opacity-30 pointer-events-none">
-                {/* <svg className="absolute w-[200%] h-[200%] -top-1/2 -left-1/2 animate-[spin_60s_linear_infinite]" viewBox="0 0 100 100" preserveAspectRatio="none">
-                    <path d="M0 50 Q 25 30 50 50 T 100 50 V 100 H 0 Z" fill="url(#grad1)" opacity="0.5" />
-                    <path d="M0 60 Q 25 40 50 60 T 100 60 V 100 H 0 Z" fill="url(#grad2)" opacity="0.3" transform="rotate(180 50 50)" />
-                    <defs>
-                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                            <stop offset="0%" stopColor="#0ea5e9" stopOpacity="0" />
-                            <stop offset="50%" stopColor="#0ea5e9" />
-                            <stop offset="100%" stopColor="#0ea5e9" stopOpacity="0" />
-                        </linearGradient>
-                        <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
-                            <stop offset="0%" stopColor="#8b5cf6" stopOpacity="0" />
-                            <stop offset="50%" stopColor="#8b5cf6" />
-                            <stop offset="100%" stopColor="#8b5cf6" stopOpacity="0" />
-                        </linearGradient>
-                    </defs>
-                </svg> */}
-                {/* Radial Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-br from-brand-blue/5 to-transparent"></div>
             </div>
 
